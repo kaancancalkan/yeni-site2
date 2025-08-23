@@ -254,9 +254,9 @@ const translations: Record<Language, Translation> = {
       { name: "Python For Data Science", percentage: 40 },
     ],
     languagesList: [
-      { name: "Native Turkish", percentage: 100 },
-      { name: "English", percentage: 85 },
-      { name: "Vietnamese", percentage: 10 },
+      { name: "Native Turkish", level:"Native" percentage: 100 },
+      { name: "English", level:"Fluent" , percentage: 85 },
+      { name: "Vietnamese", level:"Starter" , percentage: 10 },
     ],
     interestsList: [
       {
@@ -458,9 +458,9 @@ const translations: Record<Language, Translation> = {
       { name: "Veri Bilimi İçin Python", percentage: 40 },
     ],
     languagesList: [
-      { name: "Ana Dil Türkçe", percentage: 100 },
-      { name: "İngilizce", percentage: 85 },
-      { name: "Vietnamca", percentage: 10 },
+      { name: "Ana Dil Türkçe", level: "Ana Dil", percentage: 100 },
+      { name: "İngilizce", level:"Akıcı", percentage: 85 },
+      { name: "Vietnamca", level: "Başlangıç", percentage: 10 },
     ],
     interestsList: [
       {
@@ -662,9 +662,9 @@ const translations: Record<Language, Translation> = {
       { name: "Python cho Khoa học Dữ liệu", percentage: 40 },
     ],
    languagesList: [
-  { name: "Native Turkish", level: "Native", percentage: 100 },
-  { name: "English", level: "Fluent", percentage: 85 },
-  { name: "Vietnamese", level: "Beginner", percentage: 10 },
+  { "name": "Tiếng Thổ Nhĩ Kỳ bản ngữ", "level": "Bản ngữ", "percentage": 100 },
+  { "name": "Tiếng Anh", "level": "Thành thạo", "percentage": 85 },
+  { "name": "Tiếng Việt", "level": "Mới bắt đầu", "percentage": 10 }
 ]
 ,
     interestsList: [
