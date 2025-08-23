@@ -26,12 +26,12 @@ jobs:
         run: npm ci
 
       - name: Build Next.js site
-        run: npm run build  # output: 'export' ile build zaten statik site oluşturacak
+        run: npm run build  # statik build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build  # distDir: 'build' olduğu için burayı upload ediyoruz
+          path: ./build
 
   deploy:
     runs-on: ubuntu-latest

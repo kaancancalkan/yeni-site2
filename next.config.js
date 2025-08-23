@@ -1,22 +1,14 @@
-/**
- * @type {import('next').NextConfig}
- */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  distDir: 'build', 
+  output: 'export',       
+  distDir: 'build',       
   reactStrictMode: true,
-   images: {
-    unoptimized: true, // statik export için gerekli
+  images: {
+    unoptimized: true,    // statik export için gerekli
   },
- 
-  // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
-  // trailingSlash: true,
- 
-  // Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
-  // skipTrailingSlashRedirect: true,
- 
-  // Optional: Change the output directory `out` -> `dist`
-  // distDir: 'dist',
+  basePath: '/yeni-site2',       // repo adı
+  assetPrefix: '/yeni-site2/',   // CSS ve JS için prefix
+  trailingSlash: true,           // /index.html ile export
 }
- 
+
 module.exports = nextConfig
