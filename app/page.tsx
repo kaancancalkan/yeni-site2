@@ -661,11 +661,12 @@ const translations: Record<Language, Translation> = {
       { name: "ABAP", percentage: 55 },
       { name: "Python cho Khoa học Dữ liệu", percentage: 40 },
     ],
-    languagesList: [
-      { name: "Tiếng Thổ Nhĩ Kỳ bản ngữ", percentage: 100 },
-      { name: "Tiếng Anh", percentage: 85 },
-      { name: "Tiếng Việt", percentage: 10 },
-    ],
+   languagesList: [
+  { name: "Native Turkish", level: "Native", percentage: 100 },
+  { name: "English", level: "Fluent", percentage: 85 },
+  { name: "Vietnamese", level: "Beginner", percentage: 10 },
+]
+,
     interestsList: [
       {
         title: "Phim ảnh",

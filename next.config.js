@@ -3,7 +3,8 @@
  */
 const nextConfig = {
   output: 'export',
-  distDir: 'build',
+  distDir: 'build', 
+  reactStrictMode: true,
  
   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   // trailingSlash: true,
