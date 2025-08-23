@@ -254,7 +254,7 @@ const translations: Record<Language, Translation> = {
       { name: "Python For Data Science", percentage: 40 },
     ],
     languagesList: [
-      { name: "Native Turkish", level:"Native" percentage: 100 },
+      { name: "Native Turkish", level:"Native" , percentage: 100 },
       { name: "English", level:"Fluent" , percentage: 85 },
       { name: "Vietnamese", level:"Starter" , percentage: 10 },
     ],

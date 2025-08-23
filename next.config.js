@@ -5,6 +5,9 @@ const nextConfig = {
   output: 'export',
   distDir: 'build', 
   reactStrictMode: true,
+   images: {
+    unoptimized: true, // statik export için gerekli
+  },
  
   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   // trailingSlash: true,
