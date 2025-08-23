@@ -285,8 +285,8 @@ const translations: Record<Language, Translation> = {
     ],
     title: "Kaan Can Calkan",
     subtitle: "SAP HR & ABAP & Fiori Consultant",
-    downloadResume: "Download my resume",
-    sendEmail: "Send me a mail",
+    // downloadResume: "Download my resume",
+    // sendEmail: "Send me a mail",
   },
   tr: {
     heroTitle: "Merhaba Ben Kaan Can Calkan",
@@ -489,8 +489,8 @@ const translations: Record<Language, Translation> = {
     ],
     title: "Kaan Can Calkan",
     subtitle: "SAP HR Teknik Danışmanı",
-    downloadResume: "Özgeçmişimi İndirin",
-    sendEmail: "Bana e posta atın",
+    // downloadResume: "Özgeçmişimi İndirin",
+    // sendEmail: "Bana e posta atın",
   },
   vi: {
     heroTitle: "Xin chào, tôi là Kaan Can Calkan",
@@ -694,8 +694,8 @@ const translations: Record<Language, Translation> = {
     ],
     title: "Kaan Can Calkan",
     subtitle: "Chuyên viên tư vấn SAP HR & ABAP & Fiori",
-    downloadResume: "Tải CV của tôi",
-    sendEmail: "Gửi email cho tôi",
+    // downloadResume: "Tải CV của tôi",
+    // sendEmail: "Gửi email cho tôi",
   },
 }
 
