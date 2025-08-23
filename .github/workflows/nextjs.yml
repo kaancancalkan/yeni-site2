@@ -10,10 +10,6 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -30,17 +26,12 @@ jobs:
         run: npm ci
 
       - name: Build Next.js site
-        run: npm run build
-
-      - name: Export Next.js site
-        run: npx next export
-        env:
-          NEXT_PUBLIC_BASE_PATH: "/"
+        run: npm run build  # output: 'export' ile build zaten statik site oluşturacak
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build/out  # build klasörü içinde out oluşacak
+          path: ./build  # distDir: 'build' olduğu için burayı upload ediyoruz
 
   deploy:
     runs-on: ubuntu-latest
