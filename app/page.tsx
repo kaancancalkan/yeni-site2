@@ -815,7 +815,7 @@ export default function Portfolio() {
         <div className="container mx-auto max-w-4xl text-center">
           <div className="mb-8">
             <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-primary/20">
-              <img src="/kaan-profile-photo.jpeg" alt="Kaan Can Calkan" className="w-full h-full object-cover" />
+              <img src="./kaan-profile-photo.jpeg" alt="Kaan Can Calkan" className="w-full h-full object-cover" />
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-4">{t.heroTitle}</h1>
             <h2 className="text-xl md:text-2xl text-muted-foreground mb-6">{t.heroSubtitle}</h2>
