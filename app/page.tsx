@@ -706,9 +706,9 @@ const languageNames: Record<Language, string> = {
 }
 
 const languageFlags: Record<Language, string> = {
-  en: "/flags/us.png",
-  tr: "/flags/tr.png",
-  vi: "/flags/vn.png",
+  en: "./flags/us.png",
+  tr: "./flags/tr.png",
+  vi: "./flags/vn.png",
 }
 
 const SkillBar = ({ name, percentage }: { name: string; percentage: number }) => (
@@ -742,7 +742,7 @@ export default function Portfolio() {
 
  const handleDownloadResume = () => {
   const link = document.createElement("a");
-  link.href = "/Kaan-Can-Calkan-CV-BA-EN.pdf"; // public klasöründeki dosya
+  link.href = "./Kaan-Can-Calkan-CV-BA-EN.pdf"; // public klasöründeki dosya
   link.download = "Kaan-Can-Calkan-CV-BA-EN.pdf"; // sadece dosya adı
   document.body.appendChild(link); // bazı tarayıcılarda gerekli
   link.click();
