@@ -292,7 +292,7 @@ const translations: Record<Language, Translation> = {
     heroTitle: "Merhaba Ben Kaan Can Calkan",
     heroSubtitle: "SAP HR & Abap & Fiori Danışmanıyım",
     heroDescription:
-      "Sakarya Üniversitesi'nden Yönetim Bilişim Sistemleri lisans diplomasına sahibim; bilgi teknolojisi, iş analizi ve proje yönetimi temellerini burada öğrendim. Athena Bilişim Çözümleri'nde Oracle HR Cloud Teknik Danışmanı olarak çalıştım ve şu anda SAP ABAP ve Fiori Danışmanı olarak görev yapıyorum. Aktif olarak kariyer fırsatlarını değerlendiriyor ve bilişim sistemlerindeki teknik uzmanlığımı yenilikçi projelerde kullanmayı hedefliyorum.",
+      "Sakarya Üniversitesi'nden Yönetim Bilişim Sistemleri lisans diplomasına sahibim; bilgi teknolojisi, iş analizi ve proje yönetimi temellerini burada öğrendim. Athena Bilişim Çözümleri'nde Oracle HR Cloud Teknik Danışmanı olarak çalıştım ve şu anda SAP ABAP ve Fiori Danışmanı olarak görev yaptım. Aktif olarak kariyer fırsatlarını değerlendiriyor ve bilişim sistemlerindeki teknik uzmanlığımı yenilikçi projelerde kullanmayı hedefliyorum.",
     downloadResume: "Özgeçmişimi İndirin",
     sendEmail: "Bana e posta atın",
     findMeOn: "Bana Ulaşın",
@@ -482,9 +482,9 @@ const translations: Record<Language, Translation> = {
         link: "https://1000kitap.com/Never119",
       },
       {
-        title: "Thiết bị công nghệ",
+        title: "Teknolojik Cihazlar",
         description:
-          "Tôi đã có sự quan tâm lớn đến phần mềm và phần cứng của các thiết bị công nghệ kể từ khi tôi lần đầu tiên gặp máy tính.",
+          "Bilgisayarla ilk tanıştığım zamandan beri teknolojik cihazların yazılım ve donanımlarına büyük ilgi duydum.",
       },
     ],
     title: "Kaan Can Calkan",
