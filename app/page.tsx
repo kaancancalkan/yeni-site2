@@ -740,14 +740,21 @@ export default function Portfolio() {
     window.location.href = "mailto:cancalkaniletisim@gmail.com"
   }
 
- const handleDownloadResume = () => {
-  const link = document.createElement("a");
-  link.href = "./Kaan-Can-Calkan-CV-BA-EN.pdf"; // public klasöründeki dosya
-  link.download = "Kaan-Can-Calkan-CV-BA-EN.pdf"; // sadece dosya adı
-  document.body.appendChild(link); // bazı tarayıcılarda gerekli
-  link.click();
-  document.body.removeChild(link);
-};
+  function handleDownloadResume() {
+    const lang = navigator.language.startsWith("tr") ? "tr" : "en";
+    const file =
+      lang === "tr"
+        ? "/Kaan-Can-Calkan-CV-BA-TR.pdf"
+        : "/Kaan-Can-Calkan-CV-BA-EN.pdf";
+
+    const link = document.createElement("a");
+    link.href = file;
+    link.download = file.split("/").pop(); // sadece dosya adı
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
 
   return (
     <div className="min-h-screen bg-background">
