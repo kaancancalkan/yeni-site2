@@ -740,20 +740,18 @@ export default function Portfolio() {
     window.location.href = "mailto:cancalkaniletisim@gmail.com"
   }
 
-  function handleDownloadResume() {
-    const lang = navigator.language.startsWith("tr") ? "tr" : "en";
-    const file =
-      lang === "tr"
-        ? "/Kaan-Can-Calkan-CV-BA-TR.pdf"
-        : "/Kaan-Can-Calkan-CV-BA-EN.pdf";
-
-    const link = document.createElement("a");
-    link.href = file;
-    link.download = file.split("/").pop(); // sadece dosya adı
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
+const handleDownloadResume = () => {
+  // Choose file based on currentLang
+  const file =
+    currentLang === "tr"
+      ? "./Kaan-Can-Calkan-CV-BA-TR.pdf"
+      : "./Kaan-Can-Calkan-CV-BA-EN.pdf";
+  const link = document.createElement("a");
+  link.href = file; // public klasöründeki dosya
+link.download = file.split("/").pop() || "resume.pdf"; // fallback ile  document.body.appendChild(link); // bazı tarayıcılarda gerekli
+  link.click();
+  document.body.removeChild(link);
+};
 
 
   return (
@@ -1044,16 +1042,21 @@ export default function Portfolio() {
 
       {/* Footer */}
       <footer id="footer" className="py-8 border-t bg-background">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-muted-foreground">
-            © 2025{" "}
-            <a href="https://kaancancalkan.github.io/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
-              Kaan Can Calkan.
-            </a>{" "}
-            All Rights Reserved.
-          </p>
-        </div>
-      </footer>
+  <div className="container mx-auto px-4 text-center">
+    <p className="text-muted-foreground">
+      © {new Date().getFullYear()}{" "}
+      <a
+        href="https://kaancancalkan.github.io/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary hover:underline font-medium"
+      >
+        Kaan Can Calkan.
+      </a>{" "}
+      All Rights Reserved.
+    </p>
+  </div>
+</footer>
     </div>
   )
 }
